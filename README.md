@@ -32,7 +32,7 @@
 
 ## About The Project
 
-This template offers a streamlined setup for building React applications with TypeScript, Redux state management, Zod for data validation, and Vite for fast development with Hot Module Replacement (HMR). It includes essential ESLint rules for maintaining code quality and consistency. 
+This template offers a streamlined setup for building Express API with TypeScript and Prisma as ORM.
 
 ## Folder Tree
 ```
@@ -112,4 +112,8 @@ This project is under the UNILICENSE. See LICENSE.txt for more information.
 
 ## Dependencies
 Below is a list of packages or libraries used for this project:
+
+@dependencies1: ^1.0.0
+@dependencies1: ^2.0.0
+
 
