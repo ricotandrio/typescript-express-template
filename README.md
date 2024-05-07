@@ -114,6 +114,7 @@ This project is under the UNILICENSE. See LICENSE.txt for more information.
 Below is a list of packages or libraries used for this project:
 
 @dependencies1: ^1.0.0
+
 @dependencies1: ^2.0.0
 
 
