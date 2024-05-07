@@ -1,11 +1,4 @@
-# Fake Payment API Specification
-
-<!-- readme header  -->
-<div align="center">
-  <p align="left">
-    <a href=""><strong>Postman API Documentation</strong></a>
-  </p>
-</div>
+# API Specification
 
 ## Error Codes
 

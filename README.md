@@ -1,61 +1,115 @@
-# Fake Payment API
+# Typescript Express Template
 
-The Fake Payment API offers fake payment information for **application prototyping purposes**. This API facilitates the generation of QR code payments. This project is a part of my learning journey in Backend Development with Typescript and Express.js, including API development, secure API authentication, and API documentation processes.
+<!-- readme header  -->
+<div align="center">
+  <p align="left">
+    <a href=""><strong>Postman API Documentation</strong></a>
+  </p>
+</div>
 
-Explore the [documentation](https://github.com/ricotandrio/fake-payment-gateway-api/blob/master/docs) for detailed information on each endpoint and the Database ERD.
+<!-- table of contents  -->
+## Table of Contents
 
-## API Installation
-To run this API on your local machine, you will need several things. Please make sure to follow each step provided.
+<ol>
+  <li>
+    <a href="#about-the-project">About The Project</a>
+  </li>
+  <li>
+    <a href="#folder-tree">Folder Tree</a>
+  </li>
+  <li>
+    <a href="#getting-started">Getting Started</a>
+    <ul>
+      <li><a href="#prerequisites">Prerequisites</a></li>
+      <li><a href="#installation">Installation</a></li>
+    </ul>
+  </li>
+  <li><a href="#usage">Usage</a></li>
+  <li><a href="#roadmap">Roadmap</a></li>
+  <li><a href="#license">License</a></li>
+  <li><a href="#dependencies">Dependencies</a></li>
+</ol>
+
+## About The Project
+
+This template offers a streamlined setup for building React applications with TypeScript, Redux state management, Zod for data validation, and Vite for fast development with Hot Module Replacement (HMR). It includes essential ESLint rules for maintaining code quality and consistency. 
+
+## Folder Tree
+```
+template
+├───docs
+├───prisma
+├───public
+├───src
+│   ├───app
+│   ├───controllers
+│   ├───middlewares
+│   ├───models
+│   │   ├───database
+│   │   ├───requests
+│   │   └───responses
+│   ├───routes
+│   └───utils
+│       ├───error
+│       └───validation
+└───test
+```
+
+## Getting Started
 
 ### Prerequisites
-`MySQL`, `Node.js`, and `Git`
+MySQL, Node.js, and Git
 
 ### Installation
-
-Clone this repository to your local machine and install all necessary dependencies using NPM.
+To begin, clone this repository to your local machine.
 
 ```bash
-git clone https://github.com/ricotandrio/fake-payment-api.git
+git clone https://github.com/ricotandrio/typescript-express-template.git
 
-cd fake-payment-api
+cd typescript-express-template
+```
 
+Use npm to install the necessary modules.
+
+```bash
 npm install
 ```
 
-Create a `.env` file and fill it with this template:
+Update .gitignore by uncommand dotenv environment variable files ignore.
 
-```plaintext
-MYSQL_URL=mysql://<username>:<password>@localhost:<port>/<database_name>
-
-JWT_SECRET=<JWT_SECRET>
+```env
+# dotenv environment variable files
+# .env
+# .env.development.local
+# .env.test.local
+# .env.production.local
+# .env.local
 ```
 
-Configure Prisma by running the following commands:
+Then, execute the following command:
 
 ```bash
 npx prisma migrate dev
 
 npx prisma generate
-```
 
-Once all necessary dependencies are installed and the database is configured, compile and run this API using:
-
-```bash
 npm run build
 
 npm run start
 ```
 
-### Testing
+## Usage
+In this section, explain the utility of the project and provide screenshots of the app.
 
-To run Jest unit tests with a specific test file, replace `--pathToTestFile` with the path of the test file.
+## Roadmap
+- ✅ Feature one.
+- ✅ Feature two.
+- ✅ Feature three.
+  - ❌ Sub-feature three.
 
-```bash
-npm test --pathToTestFile
-```
+## License 
+This project is under the UNILICENSE. See LICENSE.txt for more information.
 
-Alternatively, you can run all unit tests by using:
+## Dependencies
+Below is a list of packages or libraries used for this project:
 
-```bash
-npm test
-```
